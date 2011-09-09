@@ -56,6 +56,13 @@ You can create a ``local_settings.py`` file alongside ``settings.py`` to
 override any setting that may be environment/instance specific. This file is
 ignored in ``.gitignore``.
 
+Data configuration
+------------------
+
+Create a proposal type (@@@ change once upgraded to newer symposion)::
+
+    >>> from symposion.proposals.models import ProposalKind
+    >>> ProposalKind.objects.create(name="Test")
 
 Issues
 ======

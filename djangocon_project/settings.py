@@ -153,6 +153,9 @@ INSTALLED_APPS = [
     "django_openid",
     "timezones",
     "emailconfirmation",
+    "biblion",
+    "boxes",
+    "sorl.thumbnail",
     
     # theme
     "pinax_theme_bootstrap",
@@ -161,6 +164,13 @@ INSTALLED_APPS = [
     "pinax.apps.account",
     "pinax.apps.analytics",
     "pinax.apps.signup_codes",
+    
+    # symposion
+    "symposion.proposals",
+    "symposion.speakers",
+    "symposion.sponsors",
+    "symposion.review",
+    "symposion.schedule",
     
     # project
     "about",
@@ -193,6 +203,11 @@ EMAIL_DEBUG = DEBUG
 DEBUG_TOOLBAR_CONFIG = {
     "INTERCEPT_REDIRECTS": False,
 }
+
+THUMBNAIL_EXTENSION = "PNG"
+
+ACCEPTING_PROPOSALS = True
+SCHEDULE_TIMEZONE = "US/Pacific"
 
 # local_settings.py can be used to override environment-specific settings
 # like database and email that differ between development and production.

@@ -1,0 +1,21 @@
+{% extends "theme_base.html" %}
+
+{% load analytics_tags %}
+{% load i18n %}
+
+{% block extra_head_base %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/site_tabs.css" />
+    {% block extra_head %}{% endblock %}
+{% endblock %}
+
+{% block footer %}
+<div class="legal">
+    {% include "_footer.html" %}
+</div>
+{% endblock %}
+
+{% block extra_body_base %}
+    {% analytics %}
+    <script src="{{ STATIC_URL }}pinax/js/jquery-1.5.2.js" type="text/javascript"></script>
+    {% block extra_body %}{% endblock %}
+{% endblock %}

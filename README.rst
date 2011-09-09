@@ -46,7 +46,8 @@ In development you should run::
     (djangocon)$ python manage.py runserver
 
 For production, this project comes with a WSGI entry point located in
-deploy/wsgi.py and can be referenced by gunicorn with deploy.wsgi:application.
+``deploy/wsgi.py`` and can be referenced by gunicorn with
+``deploy.wsgi:application``.
 
 Configuration
 =============

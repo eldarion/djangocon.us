@@ -24,6 +24,10 @@ Create a virtual environment where djangocon dependencies will live::
     $ source djangocon/bin/activate
     (djangcon)$
 
+Make the project directory your working directory::
+
+    $ cd djangocon_project
+
 Install djangocon project dependencies::
 
     (djangocon)$ pip install -r requirements/project.txt

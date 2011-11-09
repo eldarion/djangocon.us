@@ -145,6 +145,9 @@ INSTALLED_APPS = [
     
     "pinax.templatetags",
     
+    # theme
+    "pinax_theme_bootstrap",
+    
     # external
     "staticfiles",
     "compressor",
@@ -156,9 +159,6 @@ INSTALLED_APPS = [
     "biblion",
     "boxes",
     "sorl.thumbnail",
-    
-    # theme
-    "pinax_theme_bootstrap",
     
     # Pinax
     "pinax.apps.account",

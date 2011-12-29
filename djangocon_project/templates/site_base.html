@@ -1,6 +1,6 @@
 {% extends "theme_base.html" %}
 
-{% load analytics_tags %}
+{% load metron_tags %}
 {% load i18n %}
 
 {% block extra_head_base %}
@@ -10,9 +10,11 @@
 
 {% block nav %}
     <ul>
-        <li><a href="{% url speaker_dashboard %}">Speaker</a></li>
+        <li><a href="{% url about %}">About</a></li>
     </ul>
 {% endblock %}
+
+{% block account_bar %}{% endblock %}
 
 {% block footer %}
 <div class="legal">

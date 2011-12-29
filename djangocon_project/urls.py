@@ -17,17 +17,18 @@ urlpatterns = patterns("",
     url(r"^$", direct_to_template, {
         "template": "homepage.html",
     }, name="home"),
+    
     url(r"^admin/invite_user/$", "pinax.apps.signup_codes.views.admin_invite_user", name="admin_invite_user"),
     url(r"^admin/", include(admin.site.urls)),
     url(r"^about/", include("about.urls")),
-    url(r"^account/", include("pinax.apps.account.urls")),
-    url(r"^openid/", include(PinaxConsumer().urls)),
-    url(r"^boxes/", include("boxes.urls")),
-    url(r"^speaker/", include("symposion.speakers.urls")),
-    url(r"^proposal/", include("symposion.proposals.urls")),
-    url(r"^review/", include("symposion.review.urls")),
-    url(r"^schedule/", include("symposion.schedule.urls")),
-    url(r"^creole_preview/$", creole_preview, name="creole_preview"),
+    # url(r"^account/", include("pinax.apps.account.urls")),
+    # url(r"^openid/", include(PinaxConsumer().urls)),
+    # url(r"^boxes/", include("boxes.urls")),
+    # url(r"^speaker/", include("symposion.speakers.urls")),
+    # url(r"^proposal/", include("symposion.proposals.urls")),
+    # url(r"^review/", include("symposion.review.urls")),
+    # url(r"^schedule/", include("symposion.schedule.urls")),
+    # url(r"^creole_preview/$", creole_preview, name="creole_preview"),
 )
 
 

@@ -21,4 +21,4 @@ Pygments==1.4
 icalendar==1.2
 django-boxes==1.0b1.dev1005
 
--e git+git://github.com/pinax/symposion.git@release/djangocon-2011#egg=symposion
+-e git+git://github.com/pinax/symposion.git#egg=symposion

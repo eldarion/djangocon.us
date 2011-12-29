@@ -159,18 +159,18 @@ INSTALLED_APPS = [
     "biblion",
     "boxes",
     "sorl.thumbnail",
+    "metron",
     
     # Pinax
     "pinax.apps.account",
-    "pinax.apps.analytics",
     "pinax.apps.signup_codes",
     
     # symposion
-    "symposion.proposals",
-    "symposion.speakers",
-    "symposion.sponsors",
-    "symposion.review",
-    "symposion.schedule",
+    # "symposion.proposals",
+    # "symposion.speakers",
+    # "symposion.sponsors",
+    # "symposion.review",
+    # "symposion.schedule",
     
     # project
     "about",

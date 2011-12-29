@@ -1,3 +1,6 @@
+body {
+  background: #fff;
+}
 ol.steps {
   font-size: 14pt;
   color: #234f32;

@@ -4,17 +4,43 @@
 {% load i18n %}
 
 {% block extra_head_base %}
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/djangocon.css" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/screen.css" />
     {% block extra_head %}{% endblock %}
 {% endblock %}
 
-{% block nav %}
-    <ul>
-        <li><a href="{% url about %}">About</a></li>
-    </ul>
-{% endblock %}
-
+{% block topbar_base %}{% endblock %}
 {% block account_bar %}{% endblock %}
+
+{% block body_base %}
+    <header id="page_header">
+        <div class="container">
+            <h1><a href="/"><img src="{{ STATIC_URL }}img/logo.png" alt="DjangoCon US - Portland 2011" /><span>DjangoCon US 2012</span></a></h1>
+            <div class="dateblock" id="tutorials_dateblock">
+                <h2><span class="fakeliningnumerals">3</span> September <span class="fakeliningnumerals">2012</span></h2>
+                <h3>tutorials</h3>
+            </div>
+            <div class="dateblock" id="talks_dateblock">
+                <h2><span class="fakeliningnumerals">4&ndash;6</span> September <span class="fakeliningnumerals">2012</span></h2>
+                <h3>talks</h3>
+            </div>
+            <div class="dateblock" id="sprints_dateblock">
+                <h2><span class="fakeliningnumerals">7&ndash;8</span> September <span class="fakeliningnumerals">2012</span></h2>
+                <h3>sprints</h3>
+            </div>
+            {# {% include "_account_bar.html" %} #}
+        </div>
+        <nav id="page_nav">
+            {% include "_nav.html" %}
+        </nav>
+        {% block tagline %}{% endblock %}
+    </header>
+
+    <div class="container">
+        {% include "_messages.html" %}
+        {% block body %}
+        {% endblock %}
+    </div>
+{% endblock %}
 
 {% block footer %}
 <div class="legal">

@@ -1,0 +1,112 @@
+// Default Values
+// =============================================================================
+
+// Animation
+$default-transition-duration: 0.3s;
+$default-transition-function: ease;
+
+// Typography
+$serif-regular: 400;
+$serif-bold: 700;
+.serif {
+    font-family: "adelle-1", "adelle-2", Cambria, Times, serif;
+}
+
+.serif-regular {
+    @extend .serif;
+    font-weight: $serif-regular;
+}
+.serif-bold {
+    @extend .serif;
+    font-weight: $serif-bold;
+}
+
+$sans-light: 300;
+$sans-bold: 700;
+.sans {
+    font-family: "facitweb-1", "facitweb-2", Helvetica, Arial, sans-serif;
+}
+.sans-light {
+    @extend .sans;
+    font-weight: $sans-light;
+}
+.sans-bold {
+    @extend .sans;
+    font-weight: $sans-bold;
+}
+
+// Colors
+$dark: #0E0E0E;
+$altdark: #2f3927;
+$background: #8eb96b;
+$light: #E3EDD7;
+$highlight: #1286bb;
+$alert: #ebed89;
+$error: #530306;
+
+// Default Styles
+// These are applicable to all layouts.
+// =============================================================================
+
+body {
+    /* For sucky browsers that don't grok multibackgrounds */
+    background: url(../img/bg.png) repeat left top $background;
+    /* For awesome browsers. */
+    background: url(../img/gradient_fade_bg.png) repeat-x left top, url(../img/bg.png) repeat left top $background;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    @extend .serif;
+}
+
+a {
+    color: $altdark;
+    font-weight: bold;
+    @include transition;
+    text-decoration: none;
+    &:hover {
+        color: $highlight;
+        text-decoration: underline;
+    }
+}
+
+button {
+    border: 0;
+    background: $dark url(../img/button_overlay.png) repeat-x;
+    padding: 8px 10px;
+    color: white;
+    text-decoration: none;
+    @extend .sans-bold;
+    font-size: 16px;
+    line-height: 1em;
+    letter-spacing: 0.1em;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    // for stupid browsers
+    -moz-box-shadow: 0 1px 3px #999;
+    -webkit-box-shadow: 0 1px 3px #999;
+    text-shadow: 0 -1px 1px #222;
+    border-bottom: 1px solid #222;
+    // for smart browsers
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    cursor: pointer;
+    text-transform: uppercase;
+    @include transition;
+    @include transition-duration(0.25s);
+    &:hover {
+        background-color: $altdark;
+    }
+    &:active {
+        top: 1px;
+    }
+    &:disabled {
+        background-color: #666;
+        &:active, &:hover {
+            top: 0;
+            cursor: default;
+        }
+    }
+}

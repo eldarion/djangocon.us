@@ -1,33 +1,20 @@
-{% extends "banner_base.html" %}
+{% extends "site_base.html" %}
 
 {% load i18n %}
 
-{% block banner %}
-    <h1>DjangoCon US 2012</h1>
-    <p>Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-    <p><a class="btn primary large">Learn more &raquo;</a></p>
-{% endblock %}
+{% block body_class %}home{% endblock %}
 
-{% block column-1 %}
-    <h2>Heading</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed viverra dui. Aenean blandit faucibus tincidunt. Phasellus fermentum elit ut erat varius cursus. Nunc posuere mauris sit amet enim congue quis elementum lectus tincidunt. Cras vel tempus metus.</p>
-    <p><a class="btn" href="#">View details &raquo;</a></p>
-{% endblock %}
+{% block tagline %}<h4>Three days of talks, two days of sprints, <br>one event you won't want to miss.</h4>{% endblock %}
 
-{% block column-2 %}
-    <h2>Heading</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed viverra dui. Aenean blandit faucibus tincidunt. Phasellus fermentum elit ut erat varius cursus. Nunc posuere mauris sit amet enim congue quis elementum lectus tincidunt. Cras vel tempus metus.</p>
-    <p><a class="btn" href="#">View details &raquo;</a></p>
-{% endblock %}
-
-{% block column-3 %}
-    <h2>Heading</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed viverra dui. Aenean blandit faucibus tincidunt. Phasellus fermentum elit ut erat varius cursus. Nunc posuere mauris sit amet enim congue quis elementum lectus tincidunt. Cras vel tempus metus.</p>
-    <p><a class="btn" href="#">View details &raquo;</a></p>
-{% endblock %}
-
-{% block column-4 %}
-    <h2>Heading</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed viverra dui. Aenean blandit faucibus tincidunt. Phasellus fermentum elit ut erat varius cursus. Nunc posuere mauris sit amet enim congue quis elementum lectus tincidunt. Cras vel tempus metus.</p>
-    <p><a class="btn" href="#">View details &raquo;</a></p>
+{% block body %}
+    <div class="row">
+        {% block vignettes %}
+            <section class="vignettes">
+                {% for person in ponypeople %}
+                    <a class="framed" href="http://www.flickr.com/photos/bastispicks/sets/72157624936586134">
+                    <img width="265" height="199" src="/site_media/static/img/people/{{ person }}.jpg"><p>by <em>Sebastian Hillig</em></p></a>
+                {% endfor %}
+            </section>
+        {% endblock %}
+    </div>
 {% endblock %}

@@ -1228,6 +1228,22 @@ a.framed:hover {
   border: none;
 }
 
+ol.steps {
+  font-size: 14pt;
+  color: #234f32;
+}
+ol.steps li {
+  line-height: 1.25em;
+}
+ol.steps li.next {
+  font-weight: bold;
+  color: #122819;
+}
+ol.steps li.done {
+  text-shadow: none;
+  text-decoration: line-through;
+}
+
 /*
 @import "partials/tablet";
 @import "partials/mobile";

@@ -1173,3 +1173,20 @@ a.framed {
         }
     }
 }
+
+ol.steps {
+  font-size: 14pt;
+  color: #234f32;
+
+  li {
+    line-height: 1.25em;
+  }
+  li.next {
+    font-weight: bold;
+    color: #122819;
+  }
+  li.done {
+    text-shadow: none;
+    text-decoration: line-through;
+  }
+}

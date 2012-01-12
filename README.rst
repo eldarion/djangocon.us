@@ -20,9 +20,9 @@ Setting up environment
 
 Create a virtual environment where djangocon dependencies will live::
 
-    $ virtualenv --no-site-packages djangcon
+    $ virtualenv --no-site-packages djangocon
     $ source djangocon/bin/activate
-    (djangcon)$
+    (djangocon)$
 
 Make the project directory your working directory::
 

@@ -1,14 +1,3 @@
-/* Less Framework 4
- * http://lessframework.com
- * by Joni Korpi
- * License: http://creativecommons.org/licenses/MIT/ */
-/*@import "compass/reset";*/
-/*@import "compass/typography/lists";
-*/
-/*@import "compass/layout/grid-background";
-*/
-/*@import "less/framework";
-@import "partials/more";*/
 .serif, .serif-regular, #page_header .dateblock h3, .talk_detail #personal .instructions, .serif-bold, #page_header .dateblock h2, body, #page_header h4, #main_content, #main_content > h3, #main_content input[type=text], #main_content input[type=password], #main_content textarea, #main_content #ticket_prices th.type, .sponsors, .vignettes, #sponsor_list article h3 {
   font-family: "adelle-1", "adelle-2", Cambria, Times, serif;
 }
@@ -46,18 +35,10 @@ body {
 a {
   color: #2f3927;
   font-weight: bold;
-  -moz-transition-property: all;
-  -webkit-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -moz-transition-timing-function: ease;
-  -webkit-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  transition-timing-function: ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   text-decoration: none;
 }
 a:hover {
@@ -86,18 +67,10 @@ button {
   border-bottom: 1px solid rgba(0, 0, 0, 0.25);
   cursor: pointer;
   text-transform: uppercase;
-  -moz-transition-property: all;
-  -webkit-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -moz-transition-timing-function: ease;
-  -webkit-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  transition-timing-function: ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   -moz-transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
@@ -163,13 +136,13 @@ button:disabled:active, button:disabled:hover {
   position: absolute;
   top: 82px;
   color: #2f3927;
-  text-shadow: #8eb96b 3px 3px 0 #8eb96b -3px -3px 0 #8eb96b -3px 3px 0 #8eb96b 3px -3px 0;
+  text-shadow: #8eb96b 3px 3px 0, #8eb96b -3px -3px 0, #8eb96b -3px 3px 0, #8eb96b 3px -3px 0, #8eb96b 3px 0 0, #8eb96b -3px 0;
 }
 #page_header .dateblock h2 {
   text-transform: uppercase;
   color: #2f3927;
   font-size: 1.2em;
-  margin-bottom: 0.3em;
+  margin-bottom: -10px;
   letter-spacing: 1px;
 }
 #page_header .dateblock h2 .fakeliningnumerals {
@@ -177,7 +150,7 @@ button:disabled:active, button:disabled:hover {
 }
 #page_header .dateblock h3 {
   font-style: italic;
-  font-size: 1.3em;
+  font-size: 1.1em;
   margin: 0;
   padding: 0;
 }
@@ -193,11 +166,12 @@ button:disabled:active, button:disabled:hover {
 #page_header h4 {
   color: #e3edd7;
   font-size: 2em;
+  font-weight: normal;
   line-height: 1.1em;
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px dashed #e3edd7;
-  text-shadow: rgba(47, 57, 39, 0.1) 0 2px 0 1px 1px 1px;
+  text-shadow: rgba(47, 57, 39, 0.1) 0 2px 0;
 }
 #page_header #account-bar {
   position: absolute;
@@ -222,7 +196,7 @@ button:disabled:active, button:disabled:hover {
 #page_header #account-bar a {
   font-weight: 700;
   text-transform: uppercase;
-  text-shadow: white 0 2px 0 1px 1px 1px;
+  text-shadow: white 0 2px 0;
 }
 #page_header #account-bar a:hover {
   text-decoration: none;
@@ -240,7 +214,7 @@ button:disabled:active, button:disabled:hover {
 #page_nav a {
   text-transform: uppercase;
   font-size: 1em;
-  text-shadow: white 0 2px 0 1px 1px 1px;
+  text-shadow: white 0 2px 0;
 }
 #page_nav a:hover {
   text-decoration: none;
@@ -252,7 +226,6 @@ button:disabled:active, button:disabled:hover {
   margin: 0;
   padding: 0;
   border: 0;
-  outline: 0;
   overflow: hidden;
   *zoom: 1;
   padding: 0 8px 0 74px;
@@ -263,7 +236,7 @@ button:disabled:active, button:disabled:hover {
 #page_nav ul li {
   list-style-image: none;
   list-style-type: none;
-  margin-left: 0px;
+  margin-left: 0;
   display: -moz-inline-box;
   -moz-box-orient: vertical;
   display: inline-block;
@@ -291,18 +264,10 @@ button:disabled:active, button:disabled:hover {
   text-decoration: none;
   font-weight: 700;
   color: #2f3927;
-  -moz-transition-property: all;
-  -webkit-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -moz-transition-timing-function: ease;
-  -webkit-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  transition-timing-function: ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 #page_footer a:hover {
   text-decoration: underline;
@@ -430,18 +395,10 @@ button:disabled:active, button:disabled:hover {
   padding: 4px;
   background-color: #e3edd7;
   font-size: 1.125em;
-  -moz-transition-property: all;
-  -webkit-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -moz-transition-timing-function: ease;
-  -webkit-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  transition-timing-function: ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 #main_content input[type=text]:focus, #main_content input[type=password]:focus, #main_content textarea:focus {
   background-color: white;
@@ -496,7 +453,7 @@ button:disabled:active, button:disabled:hover {
   padding: 25px 40px;
   color: #e3edd7;
   text-align: center;
-  text-shadow: #617650 0 2px 0 1px 1px 1px;
+  text-shadow: #617650 0 2px 0;
 }
 #main_content #ticket_prices tr {
   border-bottom: 1px dashed #617650;
@@ -537,18 +494,10 @@ button:disabled:active, button:disabled:hover {
   right: 9px;
   bottom: 60px;
   padding: 20px 20px 15px;
-  -moz-transition-property: all;
-  -webkit-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -moz-transition-timing-function: ease;
-  -webkit-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  transition-timing-function: ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 #main_content #tickets_cta:hover {
   background-color: #ebed89;
@@ -568,7 +517,7 @@ button:disabled:active, button:disabled:hover {
   line-height: 1.25em;
   font-weight: bold;
   margin-bottom: 0.25em;
-  text-shadow: rgba(227, 237, 215, 0.5) 0 1px 0 1px 1px 1px;
+  text-shadow: rgba(227, 237, 215, 0.5) 0 1px 0;
 }
 #main_content article.blog-post header h1 a {
   background-color: transparent;
@@ -729,18 +678,10 @@ a.framed:hover {
   bottom: 25px;
   padding: 4px;
   opacity: 0;
-  -moz-transition-property: all;
-  -webkit-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -moz-transition-timing-function: ease;
-  -webkit-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  transition-timing-function: ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .sponsor a:hover {
   background-color: #ebed89;
@@ -775,18 +716,10 @@ a.framed:hover {
   bottom: 25px;
   padding: 4px;
   opacity: 0;
-  -moz-transition-property: all;
-  -webkit-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -moz-transition-timing-function: ease;
-  -webkit-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  transition-timing-function: ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .vignettes a.framed p em {
   text-transform: uppercase;
@@ -805,7 +738,7 @@ a.framed:hover {
 }
 #sponsor_list h2 {
   font-weight: bold;
-  text-shadow: rgba(227, 237, 215, 0.5) 0 1px 0 1px 1px 1px;
+  text-shadow: rgba(227, 237, 215, 0.5) 0 1px 0;
   margin-top: 30px;
 }
 #sponsor_list p {
@@ -888,7 +821,7 @@ a.framed:hover {
 }
 .box h1 {
   color: #2f3927;
-  text-shadow: rgba(227, 237, 215, 0.5) 0 1px 0 1px 1px 1px;
+  text-shadow: rgba(227, 237, 215, 0.5) 0 1px 0;
   font-size: 2em;
   line-height: 1.2em;
   margin-bottom: 0.5em;
@@ -912,7 +845,7 @@ a.framed:hover {
 .homepage_blog > h1 {
   text-transform: uppercase;
   color: #2f3927;
-  text-shadow: rgba(227, 237, 215, 0.5) 0 1px 0 1px 1px 1px;
+  text-shadow: rgba(227, 237, 215, 0.5) 0 1px 0;
   font-size: 2em;
   line-height: 1em;
   margin-bottom: .6em;
@@ -923,18 +856,10 @@ a.framed:hover {
   font-size: .8em;
   margin-bottom: 0!important;
   padding: 8px 2%;
-  -moz-transition-property: all;
-  -webkit-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -moz-transition-timing-function: ease;
-  -webkit-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  transition-timing-function: ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   width: 96%;
 }
 .homepage_blog article.blog-post:hover {
@@ -1193,18 +1118,10 @@ a.framed:hover {
   background-position-x: left;
   background-position-y: -4px;
   background-color: transparent;
-  -moz-transition-property: all;
-  -webkit-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -moz-transition-timing-function: ease;
-  -webkit-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  transition-timing-function: ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   -moz-transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
   -o-transition-duration: 0.2s;
@@ -1243,10 +1160,3 @@ ol.steps li.done {
   text-shadow: none;
   text-decoration: line-through;
 }
-
-/*
-@import "partials/tablet";
-@import "partials/mobile";
-@import "partials/wide-mobile";
-@import "partials/high-px-ratio";
-*/

@@ -1,20 +1,42 @@
 {% extends "site_base.html" %}
 
 {% load i18n %}
-
-{% block body_class %}home{% endblock %}
+{% load boxes_tags %}
+{% load biblion_tags %}
 
 {% block tagline %}<h4>Three days of talks, two days of sprints, <br>one event you won't want to miss.</h4>{% endblock %}
 
+{% block body_class %}home{% endblock %}
 {% block body %}
-    <div class="row">
-        {% block vignettes %}
-            <section class="vignettes">
-                {% for person in ponypeople %}
-                    <a class="framed" href="http://www.flickr.com/photos/bastispicks/sets/72157624936586134">
-                    <img width="265" height="199" src="/site_media/static/img/people/{{ person }}.jpg"><p>by <em>Sebastian Hillig</em></p></a>
-                {% endfor %}
-            </section>
-        {% endblock %}
-    </div>
+    {% comment %}
+    <section class="box first">
+        {% box "tickets" %}
+    </section>
+    <section class="box">
+        {% box "sponsors" %}
+    </section>
+    {% endcomment %}
+    <section class="homepage_blog">
+    <h1>Blog</h1>
+    {% comment %}
+        @@@ include snippet for the first post expanded
+        {% latest_blog_posts as posts %}
+        {% if posts %}
+            {% for post in posts %}
+                {% include "biblion/_blog_post_tease_snippet.html" %}
+            {% endfor %}
+        {% else %}
+            <p>No blog posts have been published.</p>
+        {% endif %}
+    {% endcomment %}
+</section>
+{% endblock %}
+
+{% block vignettes %}
+    <section class="vignettes">
+        {% for person in ponypeople %}
+            <a class="framed" href="http://www.flickr.com/photos/bastispicks/sets/72157624936586134">
+            <img width="265" height="199" src="/site_media/static/img/people/{{ person }}.jpg"><p>by <em>Sebastian Hillig</em></p></a>
+        {% endfor %}
+    </section>
 {% endblock %}

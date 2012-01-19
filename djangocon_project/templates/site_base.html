@@ -35,13 +35,17 @@
         <nav id="page_nav">
             {% include "_nav.html" %}
         </nav>
-        {% block tagline %}{% endblock %}
+        <div class="container">
+            {% block tagline %}{% endblock %}
+        </div>
     </header>
 
     <div class="container">
-        {% include "_messages.html" %}
-        {% block body %}
-        {% endblock %}
+        <section id="main_content">
+            {% include "_messages.html" %}
+            {% block body %}
+            {% endblock %}
+        </section>
     </div>
 {% endblock %}
 

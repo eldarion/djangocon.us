@@ -2816,7 +2816,7 @@ button:disabled:active, button:disabled:hover {
 #page_header .dateblock h2 {
   text-transform: uppercase;
   color: #2f3927;
-  font-size: 1.2em;
+  font-size: 1em;
   margin-bottom: -10px;
   letter-spacing: 1px;
 }
@@ -2825,7 +2825,7 @@ button:disabled:active, button:disabled:hover {
 }
 #page_header .dateblock h3 {
   font-style: italic;
-  font-size: 1.1em;
+  font-size: .9em;
   margin: 0;
   padding: 0;
 }
@@ -2939,8 +2939,10 @@ button:disabled:active, button:disabled:hover {
   padding-bottom: 20px;
   border-top: 1px dotted rgba(227, 237, 215, 0.7);
   color: #2f3927;
-  font-size: 0.75em;
   line-height: 1.6em;
+}
+#page_footer p {
+  font-size: 0.6em;
 }
 #page_footer a {
   text-decoration: none;
@@ -3038,6 +3040,7 @@ button:disabled:active, button:disabled:hover {
   padding-bottom: 9px;
 }
 #main_content > p, #main_content > ul, #main_content > ol, #main_content > table, #main_content > form {
+  width: 640px;
   line-height: 1.5em;
   margin-bottom: 1em;
 }
@@ -3232,7 +3235,7 @@ button:disabled:active, button:disabled:hover {
   padding-top: 0;
 }
 #main_content article.blog-post .teaser, #main_content article.blog-post .content {
-  width: 400px;
+  width: 640px;
 }
 
 .framed {
@@ -3660,9 +3663,13 @@ a.framed:hover {
 }
 
 .speaker_profile .speakername {
+  width: 640px;
   font-size: 2.5em;
   padding-top: 3.2em;
   margin-bottom: 1em;
+}
+.speaker_profile .bio, .speaker_profile .sessions {
+  width: 640px;
 }
 .speaker_profile .sessions dt {
   text-transform: uppercase;
@@ -3714,6 +3721,9 @@ a.framed:hover {
   font-size: 0.65em;
   vertical-align: 0.5em;
   line-height: 1.0em;
+}
+.talk_detail .description, .talk_detail .abstract, .talk_detail .meta {
+  width: 640px;
 }
 .talk_detail .meta {
   text-transform: uppercase;

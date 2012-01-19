@@ -1,0 +1,10 @@
+<article class="blog-post">
+    <header>
+        <h1><a href="{{ post.get_absolute_url }}" class="post-link">{{ post.title }}</a></h1>
+        {% include "biblion/dateline.html" %}
+    </header>
+    <section class="teaser">
+        {{ post.teaser_html|safe }}
+        <p class="more"><a href="{{ post.get_absolute_url }}" class="post-link">read more...</a></p>
+    </section>
+</article>

@@ -1,0 +1,16 @@
+{% extends "biblion/blog_base.html" %}
+
+{% block primary %}
+    <header>
+        <h1>Blog</h1>
+        <p>All the news and updates, straight from the pony's mouth.</p>
+    </header>
+    {% if posts %}
+        {% for post in posts %}
+            {% include "biblion/_blog_post_tease_snippet.html" %}
+        {% endfor %}
+    {% else %}
+        <p>No blog posts have been published.</p>
+    {% endif %}
+    
+{% endblock %}

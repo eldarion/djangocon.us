@@ -1,0 +1,18 @@
+{% extends "biblion/blog_base.html" %}
+
+{% block head_title %}{{ post.title }}{% endblock %}
+
+{% block primary %}
+    <header>
+        <h1>Blog</h1>
+        <p>All the news and updates, straight from the pony's mouth.</p>
+    </header>
+    <article class="blog-post">
+        <header>
+            <h1>{{ post.title }}</h1>
+            {% include "biblion/dateline.html" %}
+        </header>
+        <section class="teaser creole">{{ post.teaser_html|safe }}</section>        
+        <section class="content creole">{{ post.content_html|safe }}</section>
+    </article>
+{% endblock %}

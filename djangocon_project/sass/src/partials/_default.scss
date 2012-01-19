@@ -62,7 +62,7 @@
             @extend .serif-bold;
             text-transform: uppercase;
             color: $altdark;
-            font-size: 1.2em;
+            font-size: 1em;
             margin-bottom: -10px;
             letter-spacing: 1px;
             .fakeliningnumerals {
@@ -72,7 +72,7 @@
         h3 {
             @extend .serif-regular;
             font-style: italic;
-            font-size: 1.1em;
+            font-size: .9em;
             margin: 0;
             padding: 0;
         }
@@ -153,18 +153,18 @@
 }
 
 #page_footer {
-    //@include grid(10);
+    //@include grid(16);
     @extend .sans-light;
-//    width: 940px;
-//    margin: 20px auto;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     border-top: 1px dotted transparentize($light, 0.3);
     color: $altdark;
-    font-size: 0.75em;
     line-height: 1.6em;
+    p {
+        font-size: 0.6em;
+    }
     a {
         text-decoration: none;
         font-weight: $sans-bold;
@@ -273,7 +273,7 @@
     }
 
     &>p, &>ul, &>ol, &>table, &>form {
-        //@include columns(7);
+        @include columns(11);
         //@include prefix(2);
         //@include suffix(1);
         line-height: 1.5em;
@@ -497,7 +497,7 @@
         }
 
         .teaser, .content {
-            @include columns(7);
+            @include columns(11);
             //@include suffix(3);
             //@include omega;
 
@@ -940,7 +940,7 @@ a.framed {
         //@include columns(2);
     }
     .speakername {
-        //@include columns(7);
+        @include columns(11);
         //@include suffix(1);
         //&.prefix {
         //    @include prefix(2);
@@ -950,7 +950,7 @@ a.framed {
         margin-bottom: 1em;
     }
     .bio, .sessions {
-        //@include columns(7);
+        @include columns(11);
         //@include prefix(2);
         //@include suffix(1);
     }
@@ -1019,7 +1019,7 @@ a.framed {
         }
     }
     .description, .abstract, .meta {
-        //@include columns(7);
+        @include columns(11);
         //@include prefix(2);
         //@include suffix(1);
     }

@@ -492,8 +492,12 @@
             margin-bottom: 1em;
         }
 
+        section.teaser {
+            padding-top: 0;
+        }
+
         .teaser, .content {
-            //@include columns(7);
+            @include columns(7);
             //@include suffix(3);
             //@include omega;
 

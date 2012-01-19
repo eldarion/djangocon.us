@@ -3,7 +3,9 @@
 // @import "compass/css3/transition";
 //
 // @import "compass/typography/lists";
-@import "compass";
+@import "compass.scss";
+
+@import "twitter/bootstrap";
 
 @import "partials/global";
 @import "partials/default";

@@ -163,7 +163,7 @@
     color: $altdark;
     line-height: 1.6em;
     p {
-        font-size: 0.6em;
+        font-size: 0.75em;
     }
     a {
         text-decoration: none;
@@ -263,7 +263,7 @@
         margin: -10px 0 20px;
         text-align: right;
         text-transform: uppercase;
-        font-size: 0.75em;
+        font-size: 0.6em;
         padding: 10px;
         background-color: transparent;
         &:active {
@@ -320,7 +320,7 @@
 
     input, textarea, select {
         display: block;
-        //@include columns(5);
+        @include columns(8);
         //@include omega;
     }
 

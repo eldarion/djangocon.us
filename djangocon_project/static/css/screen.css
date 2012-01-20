@@ -2946,7 +2946,7 @@ li {
   line-height: 1.6em;
 }
 #page_footer p {
-  font-size: 0.6em;
+  font-size: 0.75em;
 }
 #page_footer a {
   text-decoration: none;
@@ -3035,7 +3035,7 @@ li {
   margin: -10px 0 20px;
   text-align: right;
   text-transform: uppercase;
-  font-size: 0.75em;
+  font-size: 0.6em;
   padding: 10px;
   background-color: transparent;
 }
@@ -3084,6 +3084,7 @@ li {
 }
 #main_content input, #main_content textarea, #main_content select {
   display: block;
+  width: 460px;
 }
 #main_content input[type=text], #main_content input[type=password], #main_content textarea {
   width: column-width(5)-8px-2px;

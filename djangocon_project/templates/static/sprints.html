@@ -1,0 +1,67 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+
+{% block body_class %}Sprints{% endblock %}
+
+{% block body %}
+<header>
+<h1>Sprints</h1>
+<p>Ready. Set. Code!</p>
+</header>
+
+<h2>What</h2>
+<p>The Djangocon sprints are a time where people who normally live around the
+world and collaborate over irc and mailing lists, come to one place to work together
+in person.  While most people will be working on the Django code base, lots
+of others will be working on related projects (Pinax, South, Armstrong,  etc) or they'll be working
+on tasks to support Django as a project (documentation, ticket triage, promotion).
+Regardless of your experience level the sprints are a great opportunity to
+collaborate, learn, and give something back to the community.</p>
+
+<h2>When</h2>
+<p>The sprint kick-off will be the last session of the main conference on Thursday afternoon.<p>
+<p>The sprints themselves will happen Friday and Saturday, September 9th and 10th, from 9 a.m. to 9 p.m.</p>
+
+<h2>Where</h2>
+<p><iframe class="framed" width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Urban+Airship,+334+Southeast+11th+Avenue,+Portland,+OR&amp;aq=&amp;sll=45.520358,-122.654615&amp;sspn=0.00875,0.018218&amp;vpsrc=6&amp;g=334+Southeast+11th+Avenue,+Portland,+OR&amp;ie=UTF8&amp;hq=Urban+Airship,&amp;hnear=334+SE+11th+Ave,+Portland,+Oregon+97214&amp;cid=18329032732500325860&amp;ll=45.53395,-122.680635&amp;spn=0.028859,0.054932&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Urban+Airship,+334+Southeast+11th+Avenue,+Portland,+OR&amp;aq=&amp;sll=45.520358,-122.654615&amp;sspn=0.00875,0.018218&amp;vpsrc=6&amp;g=334+Southeast+11th+Avenue,+Portland,+OR&amp;ie=UTF8&amp;hq=Urban+Airship,&amp;hnear=334+SE+11th+Ave,+Portland,+Oregon+97214&amp;cid=18329032732500325860&amp;ll=45.53395,-122.680635&amp;spn=0.028859,0.054932&amp;z=14&amp;iwloc=A">View Larger Map</a></small></p>
+
+<h2>How</h2>
+<p>The sprints are a fairly informal event.  There is no registration required
+to attend the sprints.  As the last session of the main conference, we'll be
+having a sprints kick-off.  During this session leaders for the various
+projects and efforts that will be worked on during the sprints will be asked to
+give a quick intro to the project and a quick overview of how best people can
+contribute.  During the sprints themselves, it's mostly a matter of showing up
+at the venue, introducing yourself to the people you'd like to work with, and
+then getting down to work.  If you have any questions or run into any problems
+feel free to talk to one of the organizers who will be around or simply ask the
+person you end up sitting next to.</p>
+
+<h2>Who</h2>
+<p>The sprints are an open event where everybody is welcome, even if you
+didn't attend the main conference.</p>
+
+<h2>Thanks</h2>
+<p>This year's sprints couldn't happen without the generosity of this year's
+sprint sponsors:</p>
+<table>
+    <tr>
+        <td>
+            <a href="http://urbanairship.com/">
+                <img src="{{ STATIC_URL }}img/sponsors/ua_logo_png_180x140_q85.PNG" alt="Urban Airship"/>
+            </a>
+        </td>
+        <td>
+            <a href="http://code.google.com/opensource">
+                <img src="{{ STATIC_URL }}img/sponsors/google_logo_png_180x140_q85.PNG" alt="Google"/>
+            </a>
+        </td>
+        <td>
+            <a href="http://theopenbastion.com/">
+                <img src="{{ STATIC_URL }}img/sponsors/openbastion_png_180x140_q85.PNG" alt="The Open Bastion"/>
+            </a>
+        </td>
+    </tr>
+</table>
+{% endblock %}

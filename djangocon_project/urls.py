@@ -34,6 +34,10 @@ urlpatterns = patterns("",
     url(r"^venue/$", direct_to_template, {
         "template": "static/venue.html",
     }, name="venue"),
+
+    url(r"^sprints/$", direct_to_template, {
+        "template": "static/sprints.html",
+    }, name="sprints"),
 )
 
 

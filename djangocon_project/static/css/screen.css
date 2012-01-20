@@ -3140,6 +3140,7 @@ li {
 }
 #main_content table th, #main_content table td {
   padding: 2px 10px;
+  border-top: 0;
 }
 #main_content #ticket_prices th {
   padding: 10px 40px;

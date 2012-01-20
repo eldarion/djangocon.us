@@ -106,7 +106,7 @@
         top: 0;
         background-color: $light;
         @extend .sans-light;
-        padding: 10px;
+        padding: 6px 10px;
         font-size: 0.75em;
         @include border-top-left-radius(6px);
         @include border-bottom-right-radius(6px);
@@ -202,7 +202,7 @@
 
 #main_content {
     @extend .serif;
-    font-size: 1.125em;
+    font-size: 1.5em;
     line-height: 1.3em;
     color: $altdark;
     position: relative;
@@ -241,7 +241,7 @@
         h1 {
             @extend .sans-bold;
             color: $altdark;
-            font-size: 2.0em;
+            font-size: 1.6em;
             line-height: 1.0em;
             text-transform: uppercase;
             margin-bottom: 0.3em;
@@ -249,7 +249,7 @@
         p {
             @extend .sans-light;
             color: $light;
-            font-size: 0.9em;
+            font-size: 0.66em;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
@@ -273,11 +273,13 @@
     }
 
     &>p, &>ul, &>ol, &>table, &>form {
-        @include columns(11);
-        //@include prefix(2);
+        @include columns(10);
+        @include gridColumn();
+        @include offset(3);
         //@include suffix(1);
         line-height: 1.5em;
         margin-bottom: 1em;
+        font-size: .75em;
     }
 
     &>ul {
@@ -294,20 +296,26 @@
         color: $altdark;
         position: relative;
         top: 1.3em;
-        width: column-width(2);
+        @include columns(3);
         clear: both;
-    }
+        font-size:0.7em;
+   }
 
     &>h3 {
         @extend .serif;
         text-transform: uppercase;
         color: lighten($altdark, 10%);
-        font-size: 0.8em;
+        font-size: 0.6em;
         position: relative;
         margin-top: 1em;
         top: 1.8em;
-        width: column-width(2);
+        @include columns(3);
         clear: both;
+        font-weight:normal;
+    }
+
+    li {
+        margin-bottom: 6px;
     }
 
     input, textarea, select {
